@@ -27,13 +27,13 @@ Now step in the master
 ```
 docker exec -it saltstackcentos7_master_1 bash
 ```
-and start execute salt commands. E.g.:
+and start executing salt commands. E.g.:
 ```
 [root@master /]#  salt-key -L
 [root@master /]#  salt '*' test.echo 'Hello master!'
 ```
 
-Relevant master configuration files are mounted to the host. Find them
+Relevant master configuration files are mounted to the host. Find them in the directory
 ```
 master/srv/salt
 ```
