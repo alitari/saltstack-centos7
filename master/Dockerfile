@@ -1,4 +1,6 @@
 FROM centos:7
+MAINTAINER alitari
+
 COPY salt.repo /etc/yum.repos.d
 
 RUN yum -y install systemd-python && yum -y install epel-release && yum -y install salt-ssh salt-syndic salt-cloud
